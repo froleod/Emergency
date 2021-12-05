@@ -19,6 +19,8 @@ function getResult()
     var resultPeoplesOt = document.getElementById('PeoplesOt');
     var resultVoda = document.getElementById('Voda');
     
+    if (Vv > 8)
+        Vv = 8;
     //Проверяем 1 класс ПО или нет
     if (KlassPO != "I") 
     {
