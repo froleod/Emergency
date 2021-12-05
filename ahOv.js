@@ -166,11 +166,11 @@ function getResult()
     resultg2.innerHTML = "g2: " + "<b>" + g2 + "</b>" + "<br/> ";
     resultT.innerHTML = "T: " + "<b>" + T + "</b>" + "<br/> ";
     resultk6.innerHTML = "k6: " + "<b>" + kq26 + "</b>" + "<br/> ";
-    resultQ1.innerHTML = "Эквивалентное количество АХОВ в первичном облаке, т: " + "<b>" + valueQ1.toFixed(4) + "</b>" + "<br/> ";
-    resultQ2.innerHTML = "Эквивалентное количество АХОВ во вторичном облаке, т: " + "<b>" + valueQ2.toFixed(4) + "</b>" + "<br/> ";
+    resultQ1.innerHTML = "Эквивалентное количество АХОВ в первичном облаке, т: " + "<b>" + valueQ1.toFixed(3) + "</b>" + "<br/> ";
+    resultQ2.innerHTML = "Эквивалентное количество АХОВ во вторичном облаке, т: " + "<b>" + valueQ2.toFixed(3) + "</b>" + "<br/> ";
 
-    resultGl.innerHTML = "Полная глубина зоны поражения, км: " + "<b>" + valueGl.toFixed(4) + "</b>" + "<br/> ";
-    resultS.innerHTML = "Площадь зоны фактического заражения, км²: " + "<b>" + valueS.toFixed(4) + "</b>" + "<br/> ";
+    resultGl.innerHTML = "Полная глубина зоны поражения, км: " + "<b>" + valueGl.toFixed(3) + "</b>" + "<br/> ";
+    resultS.innerHTML = "Площадь зоны фактического заражения, км²: " + "<b>" + valueS.toFixed(3) + "</b>" + "<br/> ";
     if (resultGl >= NP){
         resultN = "Авария затронет ближайший населенный пункт";
     }
