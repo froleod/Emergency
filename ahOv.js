@@ -162,10 +162,10 @@ function getResult()
     var resultg2 = document.getElementById('resultg2');
     var resultNP = document.getElementById('resultNP');
     var resultN;
-    resultg1.innerHTML = "g1: " + "<b>" + g1 + "</b>" + "<br/> ";
-    resultg2.innerHTML = "g2: " + "<b>" + g2 + "</b>" + "<br/> ";
-    resultT.innerHTML = "T: " + "<b>" + T + "</b>" + "<br/> ";
-    resultk6.innerHTML = "k6: " + "<b>" + kq26 + "</b>" + "<br/> ";
+    // resultg1.innerHTML = "g1: " + "<b>" + g1 + "</b>" + "<br/> ";
+    // resultg2.innerHTML = "g2: " + "<b>" + g2 + "</b>" + "<br/> ";
+    // resultT.innerHTML = "T: " + "<b>" + T + "</b>" + "<br/> ";
+    // resultk6.innerHTML = "k6: " + "<b>" + kq26 + "</b>" + "<br/> ";
     resultQ1.innerHTML = "Эквивалентное количество АХОВ в первичном облаке, т: " + "<b>" + valueQ1.toFixed(3) + "</b>" + "<br/> ";
     resultQ2.innerHTML = "Эквивалентное количество АХОВ во вторичном облаке, т: " + "<b>" + valueQ2.toFixed(3) + "</b>" + "<br/> ";
 
@@ -184,94 +184,6 @@ function getResult()
     //resultGl2.innerHTML = "Время испарения АХОВ, ч: " + "<b>" + "</b>" + "<br/> ";
     //resultGl2.innerHTML = "Время подхода облака АХОВ к населенному пункту, ч: " + "<b>" + "</b>" + "<br/> ";
 }
-{/* <table class="center" id = "copytext1">
-<tr>
-    <td class="tdvyh">
-        ВХОДНЫЕ ПАРАМЕТРЫ
-    </td>
-</tr>
-<tr>
-    <td class="tdvyh">
-        Химическое вещество:
-    </td>
-    <td>
-        String(TypeV);
-    </td>
-
-</tr>
-<tr>
-    <td class="tdvyh">
-        Количество вещества, выброшенного в атмосферу, т:
-    </td>
-    <td>
-        String(Q);
-    </td>
-</tr>
-    
-    <tr>
-    <td class="tdvyh">
-        Степень вертикальной устойчивости атмосферы:
-    </td>
-    <td>
-        String(TypeA);
-    </td>
-</tr>
-<tr>
-    <td class="tdvyh">
-        Время, прошедшее после начала аварии, ч:
-    </td>
-    <td>
-        Sting(Time);
-    </td>
-</tr>
-    <tr>
-    <td class="tdvyh">
-        Температура воздуха, °C:
-    </td>
-    <td>
-        String(Temp);
-    </td>
-</tr>
-    
-<tr>
-    <td class="tdvyh">
-        Скорость ветра, м/с:
-    </td>
-
-    <td>
-        String(Vv);
-    </td>
-</tr>
-<tr>
-    <td class="tdvyh">
-        Высота обваловки местности, м:
-    </td>
-    <td>
-        H;
-    </td>
-</tr>
-<tr>
-    <td class="tdvyh">
-        Расстояние до ближайшего населенного пункта, км:
-    </td>
-    <td>String(NP) </td>;
-</tr>
-</table> */}
-
-
-    // let download1 = document.querySelector('#download');
-    // download1.addEventListener('click', downloadText1);
-    // function downloadText1() {
-    // 	let copytext1 = document.querySelector('#copytext1').textContent;
-    // 	console.log(copytext1)
-    // 	let el = document.createElement('a');
-    // 	el.setAttribute('href', `data:text/plain;charset=utf-8,${encodeURIComponent(copytext1)}`);
-    // 	el.setAttribute('download1', 'text.txt');
-    // 	el.style.display = 'none';
-    // 	document.body.appendChild(el);
-    // 	el.click();
-    // 	document.body.removeChild(el);
-    // }
 
     let download = document.querySelector('#download');
     download.addEventListener('click', downloadText);
