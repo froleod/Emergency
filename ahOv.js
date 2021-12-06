@@ -10,8 +10,14 @@ function getResult()
     var H = document.getElementById('H').value;
     var NP = document.getElementById('NP').value;
     var kf;
+    if(TypeV == 'аммиак'){
     var kq11 = 0.01, kq13 = 0.04, kq15, kq17 = 1;
     var kq21 = 0.01, kq22 = 0.025, kq23 = 0.04, kq24, kq25, kq26, kq27, d = 0.681;
+    }
+    else{
+        var kq11 = 0.18, kq13 = 1, kq15, kq17 = 1;
+        var kq21 = 0.18, kq22 = 0.052, kq23 = 1, kq24, kq25, kq26, kq27, d = 0.681;
+    }
     if(H == 0)
         H = 0.05;
     else
@@ -171,13 +177,14 @@ function getResult()
 
     resultGl.innerHTML = "Полная глубина зоны поражения, км: " + "<b>" + valueGl.toFixed(3) + "</b>" + "<br/> ";
     resultS.innerHTML = "Площадь зоны фактического заражения, км²: " + "<b>" + valueS.toFixed(3) + "</b>" + "<br/> ";
-    if (resultGl >= NP){
-        resultN = "Авария затронет ближайший населенный пункт";
+    if (valueGl > NP){
+        resultN = "затронет ближайший населенный пункт";
     }
     else{
-        resultN = "Авария не затронет ближайший населенный пункт";
+        resultN = "не затронет ближайший населенный пункт";
     }
-    resultNP.innerHTML = resultN;
+    resultNP.innerHTML = "Авария " + resultN;
+	
     //resultGl1.innerHTML = "Глубина зоны заражения для первичного облака, км: " + "<b>" + "</b>" + "<br/> ";
     //resultGl2.innerHTML = "Глубина зоны заражения для вторичного облака, км: " + "<b>" + "</b>" + "<br/> ";
     
