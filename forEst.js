@@ -21,6 +21,8 @@ function getResult()
     
     if (Vv > 8)
         Vv = 8;
+    if(PerN == "")
+        PerN = 0;
     //Проверяем 1 класс ПО или нет
     if (KlassPO != "I") 
     {
