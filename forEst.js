@@ -77,12 +77,12 @@ function getResult()
                     var valueFront = 200;
                     var valueFlang = 30;
                     var valueTyl = 22;
-                    alert("Входные параметры: \n Пожар: низовой \n Класс ПО: IV \n Лес: хвойный");
+                    // alert("Входные параметры: \n Пожар: низовой \n Класс ПО: IV \n Лес: хвойный");
 
                 }
                 else
                 {
-                    alert("Входные параметры: \n Пожар: низовой \n Класс ПО: IV \n Лес: лиственный");
+                    // alert("Входные параметры: \n Пожар: низовой \n Класс ПО: IV \n Лес: лиственный");
                     var valueFront = 110;
                     var valueFlang = 34;
                     var valueTyl = 19;
@@ -96,12 +96,12 @@ function getResult()
                     var valueFront = 200;
                     var valueFlang = 30;
                     var valueTyl = 22;
-                    alert("Входные параметры: \n Пожар: низовой \n Класс ПО: V \n Лес: хвойный");
+                    // alert("Входные параметры: \n Пожар: низовой \n Класс ПО: V \n Лес: хвойный");
 
                 }
                 else
                 {
-                    alert("Входные параметры: \n Пожар: низовой \n Класс ПО: V \n Лес: лиственный");
+                    //alert("Входные параметры: \n Пожар: низовой \n Класс ПО: V \n Лес: лиственный");
                     var valueFront = 110;
                     var valueFlang = 34;
                     var valueTyl = 19;
@@ -120,13 +120,13 @@ function getResult()
         {
         var valueFlang = 0.0092*Math.pow(Vv,4) - 0.2144*Math.pow(Vv,3) + 1.5257*Math.pow(Vv,2)-1.0479*Vv+9;
         var valueTyl = -0.0395*Math.pow(Vv,3) + 0.5371*Math.pow(Vv,2)- 0.7971*Vv+5;
-        alert("Входные параметры: \n Пожар: верховой \n Класс ПО: II");
+        // alert("Входные параметры: \n Пожар: верховой \n Класс ПО: II");
         }
         else if(KlassPO == "III")
         {
             var valueFlang = -0.0011*Math.pow(Vv,6) + 0.0316*Math.pow(Vv,5) - 0.3366*Math.pow(Vv,4) + 1.5686*Math.pow(Vv,3) - 2.6792*Math.pow(Vv,2) + 1.5855*Vv + 18;
             var valueTyl = 0.0087*Math.pow(Vv,4) - 0.2403*Math.pow(Vv,3) + 1.9581*Math.pow(Vv,2) - 2.5641*Vv+5;
-            alert("Входные параметры: \n Пожар: верховой \n Класс ПО: III");
+            // alert("Входные параметры: \n Пожар: верховой \n Класс ПО: III");
         }
 
         }
