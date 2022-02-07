@@ -12,7 +12,7 @@ html, body {
 	}
 .button {
   display: inline-block;
-  background: #0f3a0c;
+  background: #17644C;
   color: #fff;
   padding: 12px;
   border: none;
@@ -25,7 +25,7 @@ html, body {
 }
 
 .buttonR {
-  background: #e44306;
+  background: #7F3968;
   color: #ffffff;
     font-size: 20px;
 }
@@ -108,7 +108,7 @@ max-width: 600px;
 height: 75px;
 }
 .colorfon{
-	background-color: #6ecc73;
+	background-color: #45BA95;
 	
 }
 .hheader{
